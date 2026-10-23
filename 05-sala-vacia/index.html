@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sala Vacía · Yoga y pilates en Mérida</title>
+  <meta name="description" content="Estudio de yoga, pilates, yin y meditación en el centro de Mérida. Tres salas con luz, grupos pequeños y la primera clase gratis. Consulta el horario y reserva tu plaza.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sala Vacía · Yoga y pilates en Mérida">
+  <meta property="og:description" content="Tres salas con luz, grupos pequeños y la primera clase gratis. Respira con nosotros.">
+  <meta property="og:image" content="img/1545205597-3d9d02c29597-1000.jpg">
+  <meta property="og:locale" content="es_ES">
+  <meta name="theme-color" content="#8b9b80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,400&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["SportsActivityLocation", "HealthClub"],
+    "name": "Sala Vacía",
+    "description": "Estudio de yoga, pilates, yin y meditación en Mérida.",
+    "url": "index.html",
+    "telephone": "+34 924 00 99 00",
+    "email": "hola@salavacia.demo",
+    "image": "img/1545205597-3d9d02c29597-1000.jpg",
+    "priceRange": "12€ - 165€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Sagasta, 14",
+      "addressLocality": "Mérida",
+      "addressRegion": "Badajoz",
+      "postalCode": "06800",
+      "addressCountry": "ES"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 38.9166, "longitude": -6.3450 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "21:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "19:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:30", "closes": "13:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    <a class="marca" href="index.html"><span class="marca__anillo" aria-hidden="true"></span>Sala Vacía</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html#estudio">El estudio</a>
+      <a href="index.html#horario">Horario</a>
+      <a href="precios.html">Precios</a>
+      <a href="profesores.html">Profesores</a>
+      <a href="faq.html">Preguntas</a>
+      <a class="nav__cta" href="index.html#gratis">Primera clase gratis</a>
+    </nav>
+    <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+      <svg class="ico-abrir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      <svg class="ico-cerrar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu-movil" id="menu-movil" hidden>
+  <button class="boton-menu menu-movil__cerrar" type="button" aria-label="Cerrar menú">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav aria-label="Menú móvil">
+    <ul>
+      <li><a href="index.html#estudio">El estudio</a></li>
+      <li><a href="index.html#horario">Horario</a></li>
+      <li><a href="precios.html">Precios</a></li>
+      <li><a href="profesores.html">Profesores</a></li>
+      <li><a href="faq.html">Preguntas</a></li>
+      <li><a href="index.html#gratis">Primera clase gratis</a></li>
+    </ul>
+  </nav>
+  <p class="menu-movil__pie">Calle Sagasta, 14 · Mérida<br><a href="tel:+34924009900">924 00 99 00</a></p>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="titulo-hero">
+    <div class="hero__fondo foto">
+      <img src="img/1545205597-3d9d02c29597-1600.jpg" alt="Sala amplia y luminosa del estudio con una practicante en postura de yoga" width="1800" height="1200" fetchpriority="high" onerror="this.classList.add('img-fallback')">
+    </div>
+    <div class="hero__velo" aria-hidden="true"></div>
+    <div class="hero__contenido">
+      <p class="hero__lugar">Yoga, pilates y meditación · Mérida</p>
+      <h1 id="titulo-hero">Vacía la sala.<br><em>Llénala de aire.</em></h1>
+
+      <button class="respira" id="respira" type="button" aria-label="Empezar una respiración guiada de un minuto" aria-describedby="respira-pista">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="respira__halo" cx="50" cy="50" r="48"></circle>
+          <circle class="respira__anillo" cx="50" cy="50" r="48"></circle>
+          <circle class="respira__progreso" cx="50" cy="50" r="48" pathLength="100"></circle>
+          <circle class="respira__nucleo" cx="50" cy="50" r="36"></circle>
+        </svg>
+        <span class="respira__texto" aria-live="polite">
+          <span class="respira__fase">inhala…</span>
+          <span class="respira__cuenta"></span>
+        </span>
+      </button>
+      <p class="respira__pista" id="respira-pista">Pulsa el círculo y respira conmigo un minuto</p>
+      <p class="respira__mensaje" id="respira-mensaje" aria-live="polite"></p>
+
+      <div class="hero__acciones">
+        <a class="boton boton--claro" href="#horario">Ver el horario</a>
+        <a class="boton boton--borde" href="#gratis">Primera clase gratis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL ESTUDIO -->
+  <section class="seccion" id="estudio" aria-labelledby="titulo-estudio">
+    <div class="contenedor estudio">
+      <div class="estudio__texto revela">
+        <h2 id="titulo-estudio">El estudio</h2>
+        <p>Una casa antigua del centro de Mérida con tres salas, suelo de madera y ventanas que dan al patio. Grupos de doce personas como mucho.</p>
+        <p>Abrimos en 2019 con una idea sencilla: un sitio al que apetezca volver aunque no apetezca hacer nada. Sin espejos, sin música alta, sin prisas al entrar ni al salir.</p>
+        <ul class="estudio__filosofia">
+          <li>La práctica se adapta al cuerpo que llega hoy, no al que llegó el lunes.</li>
+          <li>Respirar bien vale más que doblarse mucho.</li>
+          <li>Lo que pasa en la esterilla se queda contigo al salir por la puerta.</li>
+        </ul>
+      </div>
+      <div class="salas">
+        <div class="sala revela">
+          <div class="foto foto--arco"><img src="img/1599901860904-17e6ed7083a0-1000.jpg" alt="Sala Norte con esterillas colocadas y luz de mañana" width="600" height="920" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Sala Norte</h3>
+          <p>Luz de mañana, 14 esterillas</p>
+        </div>
+        <div class="sala revela revela--2">
+          <div class="foto foto--arco"><img src="img/1667774576665-be0416e70ce8-1000.jpg" alt="Sala Patio, espacio sereno con plantas y cojines de meditación" width="600" height="1080" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Sala Patio</h3>
+          <p>Yin y meditación, 12 plazas</p>
+        </div>
+        <div class="sala revela revela--3">
+          <div class="foto foto--arco"><img src="img/1579454566790-f9e5697ddf36-1000.jpg" alt="Sala Reformer con seis camillas de pilates" width="600" height="920" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Sala Reformer</h3>
+          <p>Seis camillas, grupos mínimos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCIPLINAS -->
+  <section class="seccion seccion--arena" id="disciplinas" aria-labelledby="titulo-disciplinas">
+    <div class="contenedor">
+      <div class="intro revela">
+        <h2 id="titulo-disciplinas">Cuatro maneras de estar</h2>
+        <p>Elige una y pulsa para ver solo sus clases en el horario.</p>
+      </div>
+      <div class="disciplinas">
+        <a class="disciplina revela" href="#horario" data-filtro-disc="yoga">
+          <div class="foto foto--arco"><img src="img/1544367567-0f2fcb009e0b-1000.jpg" alt="Practicante de yoga en postura de equilibrio" width="600" height="800" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Yoga</h3>
+          <p>Vinyasa que fluye y hatha que sostiene. Para mover el cuerpo y aquietar el ruido.</p>
+        </a>
+        <a class="disciplina revela revela--2" href="#horario" data-filtro-disc="pilates">
+          <div class="foto foto--arco"><img src="img/1747239069226-55382c570116-1000.jpg" alt="Ejercicio de pilates en camilla reformer" width="600" height="800" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Pilates</h3>
+          <p>Suelo y reformer. Centro fuerte, espalda larga, grupos de seis en camilla.</p>
+        </a>
+        <a class="disciplina revela revela--3" href="#horario" data-filtro-disc="yin">
+          <div class="foto foto--arco"><img src="img/1506126613408-eca07ce68773-1000.jpg" alt="Persona sentada en calma frente al horizonte" width="600" height="800" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Yin</h3>
+          <p>Posturas largas, casi quietas. Tres a cinco minutos en cada una, con soporte.</p>
+        </a>
+        <a class="disciplina revela" href="#horario" data-filtro-disc="meditacion">
+          <div class="foto foto--arco"><img src="img/1554244933-d876deb6b2ff-1000.jpg" alt="Persona respirando con los ojos cerrados" width="600" height="800" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Meditación</h3>
+          <p>Sentarse y respirar. Media hora al mediodía o tres cuartos por la tarde.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIO -->
+  <section class="seccion" id="horario" aria-labelledby="titulo-horario">
+    <div class="contenedor">
+      <div class="intro revela">
+        <h2 id="titulo-horario">Horario de la semana</h2>
+        <p id="horario-contador">Todas las clases de la semana</p>
+      </div>
+
+      <form class="filtros" aria-label="Filtrar clases" onsubmit="return false">
+        <div class="filtro">
+          <label for="f-disciplina">Disciplina</label>
+          <select id="f-disciplina">
+            <option value="">Todas</option>
+            <option value="yoga">Yoga</option>
+            <option value="pilates">Pilates</option>
+            <option value="yin">Yin</option>
+            <option value="meditacion">Meditación</option>
+          </select>
+        </div>
+        <div class="filtro">
+          <label for="f-nivel">Nivel</label>
+          <select id="f-nivel">
+            <option value="">Cualquiera</option>
+            <option value="iniciacion">Iniciación</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="todos">Abiertas a todos</option>
+          </select>
+        </div>
+        <div class="filtro">
+          <label for="f-profesor">Profesor</label>
+          <select id="f-profesor">
+            <option value="">Cualquiera</option>
+            <option value="ana">Ana Rebollo</option>
+            <option value="marcos">Marcos Vinagre</option>
+            <option value="lucia">Lucía Trejo</option>
+            <option value="jorge">Jorge Carmona</option>
+          </select>
+        </div>
+        <button class="boton boton--borde filtros__limpiar" type="button" id="f-limpiar">Quitar filtros</button>
+      </form>
+
+      <div class="dias" id="horario-dias" role="tablist" aria-label="Día de la semana"></div>
+      <div class="rejilla" id="horario-rejilla" aria-live="polite"></div>
+
+      <p class="horario__nota">Las plazas libres son orientativas. La reserva queda guardada en este dispositivo y se confirma por WhatsApp.</p>
+
+      <aside class="tus-clases revela" aria-labelledby="titulo-tus-clases">
+        <h3 id="titulo-tus-clases">Tus clases</h3>
+        <p class="tus-clases__vacio" id="tus-clases-vacio">Todavía no has guardado ninguna. Pulsa «Reservar plaza» en una clase y aparecerá aquí.</p>
+        <ul id="tus-clases-lista"></ul>
+        <div class="tus-clases__nombre" hidden>
+          <label for="tus-clases-nombre">Tu nombre (para el mensaje)</label>
+          <input type="text" id="tus-clases-nombre" autocomplete="given-name" placeholder="Por ejemplo, Carmen">
+        </div>
+        <div class="tus-clases__acciones">
+          <a class="boton boton--whatsapp" id="tus-clases-whatsapp" href="https://wa.me/34924009900" target="_blank" rel="noopener" hidden>Confirmar por WhatsApp</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- PRIMERA CLASE GRATIS -->
+  <section class="gratis" id="gratis" aria-labelledby="titulo-gratis">
+    <div class="contenedor">
+      <h2 id="titulo-gratis">La primera clase es gratis</h2>
+      <p>Elige cualquiera del horario, ven diez minutos antes y trae ropa cómoda. Esterillas, bloques y mantas las ponemos nosotros.</p>
+      <a class="boton boton--claro boton--grande" href="https://wa.me/34924009900?text=Hola%2C%20Sala%20Vac%C3%ADa.%20Quiero%20probar%20mi%20primera%20clase%20gratis.%20%C2%BFQu%C3%A9%20d%C3%ADa%20me%20recomend%C3%A1is%3F" target="_blank" rel="noopener">Pedir mi clase gratis</a>
+    </div>
+  </section>
+
+  <!-- PROFESORES -->
+  <section class="seccion" id="profesores" aria-labelledby="titulo-profes">
+    <div class="contenedor">
+      <div class="intro revela">
+        <h2 id="titulo-profes">Quien te acompaña</h2>
+        <p>Cuatro personas, cuatro maneras de enseñar. Pulsa para ver sus clases en el horario.</p>
+      </div>
+      <div class="profes">
+        <a class="profe revela" href="#horario" data-filtro-profe="ana">
+          <div class="foto foto--circulo"><img src="img/1552196527-bffef41ef674-600.jpg" alt="Ana Rebollo, profesora de yoga" width="400" height="400" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Ana</h3>
+          <p>Vinyasa y yoga para la espalda</p>
+        </a>
+        <a class="profe revela revela--2" href="#horario" data-filtro-profe="marcos">
+          <div class="foto foto--circulo"><img src="img/1611094607507-8c8173e5cf33-600.jpg" alt="Marcos Vinagre, profesor de pilates" width="400" height="400" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Marcos</h3>
+          <p>Pilates suelo y reformer</p>
+        </a>
+        <a class="profe revela revela--3" href="#horario" data-filtro-profe="lucia">
+          <div class="foto foto--circulo"><img src="img/1683056255281-e52a141924f0-600.jpg" alt="Lucía Trejo, profesora de yin y meditación" width="400" height="400" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Lucía</h3>
+          <p>Yin y meditación</p>
+        </a>
+        <a class="profe revela" href="#horario" data-filtro-profe="jorge">
+          <div class="foto foto--circulo"><img src="img/1566501206188-5dd0cf160a0e-600.jpg" alt="Jorge Carmona, profesor de hatha y reformer" width="400" height="400" loading="lazy" onerror="this.classList.add('img-fallback')"></div>
+          <h3>Jorge</h3>
+          <p>Hatha suave y reformer</p>
+        </a>
+      </div>
+      <p style="text-align:center;margin-top:2.5rem"><a class="boton boton--borde" href="profesores.html">Conocerlos mejor</a></p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="seccion seccion--salvia" id="testimonios" aria-labelledby="titulo-testimonios">
+    <div class="contenedor">
+      <div class="intro revela">
+        <h2 id="titulo-testimonios">Lo que cuentan al salir</h2>
+      </div>
+      <div class="testimonios">
+        <blockquote class="testimonio revela">
+          <p>Llegué con la espalda hecha un nudo por el ordenador. Tres meses de yoga para la espalda con Ana y he dejado de pensar en ella.</p>
+          <footer>Carmen, 41 años · martes y jueves a las diez</footer>
+        </blockquote>
+        <blockquote class="testimonio revela revela--2">
+          <p>El reformer me daba miedo. Jorge te lo explica como si fuera lo más normal del mundo y a la tercera clase ya no lo era.</p>
+          <footer>Rubén, 56 años · reformer de los lunes</footer>
+        </blockquote>
+        <blockquote class="testimonio revela revela--3">
+          <p>El yin de los sábados con cuencos es lo único a lo que no he faltado en todo el año. Salgo distinta a como entro.</p>
+          <footer>Inés, 33 años · yin con cuencos</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO LLEGAR -->
+  <section class="seccion" id="llegar" aria-labelledby="titulo-llegar">
+    <div class="contenedor llegar">
+      <div class="foto foto--suave revela">
+        <img src="img/1604762524889-3e2fcc145683-1000.jpg" alt="Entrada del estudio con plantas y luz natural" width="900" height="675" loading="lazy" onerror="this.classList.add('img-fallback')">
+      </div>
+      <div class="revela revela--2">
+        <h2 id="titulo-llegar">Cómo llegar</h2>
+        <address>
+          <strong>Calle Sagasta, 14 · 06800 Mérida</strong><br>
+          A dos minutos andando de la Plaza de España y a cinco del Templo de Diana. Portón verde, timbre de la izquierda.
+        </address>
+        <div class="llegar__datos">
+          <p><strong>Teléfono y WhatsApp</strong><br><a href="tel:+34924009900">924 00 99 00</a></p>
+          <p><strong>Correo</strong><br><a href="mailto:hola@salavacia.demo">hola@salavacia.demo</a></p>
+          <p><strong>Horario de recepción</strong><br>Lunes a viernes de 7:00 a 21:30 · Sábados de 9:00 a 19:30 · Domingos de 9:30 a 13:00</p>
+          <p><strong>Aparcar</strong><br>Parking público de la calle Cervantes a 200 m. En bici, hay aparcabicis en el patio.</p>
+        </div>
+        <p style="margin-top:1.5rem"><a class="boton boton--ciruela" href="https://www.google.com/maps/search/?api=1&query=Calle+Sagasta+14+M%C3%A9rida" target="_blank" rel="noopener">Abrir en el mapa</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="marca" href="index.html"><span class="marca__anillo" aria-hidden="true"></span>Sala Vacía</a>
+        <p>Estudio de yoga, pilates, yin y meditación.<br>Calle Sagasta, 14 · 06800 Mérida</p>
+        <p><a href="tel:+34924009900">924 00 99 00</a> · <a href="mailto:hola@salavacia.demo">hola@salavacia.demo</a></p>
+      </div>
+      <div>
+        <h3>Practicar</h3>
+        <ul>
+          <li><a href="index.html#horario">Horario</a></li>
+          <li><a href="precios.html">Bonos y tarifas</a></li>
+          <li><a href="index.html#gratis">Primera clase gratis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Conocer</h3>
+        <ul>
+          <li><a href="index.html#estudio">El estudio</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Horario del estudio</h3>
+        <ul>
+          <li>L–V · 7:00–21:30</li>
+          <li>Sábado · 9:00–19:30</li>
+          <li>Domingo · 9:30–13:00</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pie__demo">Sitio de demostración · negocio ficticio · Fotografías: Unsplash</p>
+  </div>
+</footer>
+
+<script src="js/comun.js"></script>
+<script src="js/respira.js"></script>
+<script src="js/horario.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Precios y bonos · Sala Vacía, Mérida</title>
+  <meta name="description" content="Clase suelta, bono 5, bono 10, mensual y trimestral ilimitados. Mueve el comparador según las clases que harás por semana y te decimos cuál te sale mejor.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Precios y bonos · Sala Vacía">
+  <meta property="og:description" content="Te decimos qué bono te sale mejor según cuántas clases hagas a la semana.">
+  <meta property="og:image" content="img/1593164842264-854604db2260-1000.jpg">
+  <meta property="og:locale" content="es_ES">
+  <meta name="theme-color" content="#8b9b80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,400&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["SportsActivityLocation", "HealthClub"],
+    "name": "Sala Vacía",
+    "url": "precios.html",
+    "telephone": "+34 924 00 99 00",
+    "address": { "@type": "PostalAddress", "streetAddress": "Calle Sagasta, 14", "addressLocality": "Mérida", "postalCode": "06800", "addressCountry": "ES" },
+    "makesOffer": [
+      { "@type": "Offer", "name": "Clase suelta", "price": "14", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Bono 5 clases", "price": "60", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Bono 10 clases", "price": "105", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Mensual ilimitado", "price": "65", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Trimestral ilimitado", "price": "165", "priceCurrency": "EUR" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    <a class="marca" href="index.html"><span class="marca__anillo" aria-hidden="true"></span>Sala Vacía</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html#estudio">El estudio</a>
+      <a href="index.html#horario">Horario</a>
+      <a href="precios.html">Precios</a>
+      <a href="profesores.html">Profesores</a>
+      <a href="faq.html">Preguntas</a>
+      <a class="nav__cta" href="index.html#gratis">Primera clase gratis</a>
+    </nav>
+    <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+      <svg class="ico-abrir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      <svg class="ico-cerrar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu-movil" id="menu-movil" hidden>
+  <button class="boton-menu menu-movil__cerrar" type="button" aria-label="Cerrar menú">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav aria-label="Menú móvil">
+    <ul>
+      <li><a href="index.html#estudio">El estudio</a></li>
+      <li><a href="index.html#horario">Horario</a></li>
+      <li><a href="precios.html">Precios</a></li>
+      <li><a href="profesores.html">Profesores</a></li>
+      <li><a href="faq.html">Preguntas</a></li>
+      <li><a href="index.html#gratis">Primera clase gratis</a></li>
+    </ul>
+  </nav>
+  <p class="menu-movil__pie">Calle Sagasta, 14 · Mérida<br><a href="tel:+34924009900">924 00 99 00</a></p>
+</div>
+
+<main>
+  <section class="hero hero--corto" aria-labelledby="titulo-precios">
+    <div class="hero__fondo foto">
+      <img src="img/1593164842264-854604db2260-1600.jpg" alt="Esterillas de yoga enrolladas con luz suave" width="1800" height="1200" fetchpriority="high" onerror="this.classList.add('img-fallback')">
+    </div>
+    <div class="hero__velo" aria-hidden="true"></div>
+    <div class="hero__contenido">
+      <p class="hero__lugar">Bonos y tarifas</p>
+      <h1 id="titulo-precios">Paga por lo que <em>practicas</em></h1>
+      <p class="hero__texto">Sin matrícula, sin permanencia. Los bonos caducan a los seis meses y las clases sueltas valen para cualquier disciplina.</p>
+    </div>
+  </section>
+
+  <section class="seccion" aria-labelledby="titulo-comparador">
+    <div class="contenedor">
+      <div class="comparador revela">
+        <div class="comparador__cabecera">
+          <h2 id="titulo-comparador" style="font-size:clamp(1.6rem,3vw,2.3rem)">¿Cuántas veces vendrás a la semana?</h2>
+          <div class="comparador__valor" id="clases-semana-valor" aria-live="polite">2<small>clases a la semana</small></div>
+        </div>
+        <label for="clases-semana" class="visually-hidden">Clases por semana</label>
+        <input class="slider" type="range" id="clases-semana" min="1" max="6" step="1" value="2" aria-valuetext="2 clases a la semana">
+        <div class="slider__marcas" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div>
+        <p class="comparador__resumen" id="comparador-resumen" aria-live="polite"></p>
+      </div>
+
+      <div class="tarifas">
+        <article class="tarifa" id="tarifa-suelta">
+          <span class="tarifa__mejor-etiqueta">La más económica para ti</span>
+          <h3>Clase suelta</h3>
+          <div class="tarifa__precio">14 €<small>/ clase</small></div>
+          <p class="tarifa__detalle">Para probar sin compromiso o venir de vez en cuando. Vale para cualquier clase del horario.</p>
+          <div class="tarifa__por-clase"><strong data-por-clase>14,00 €</strong> por clase<span data-por-mes></span></div>
+          <a class="boton boton--borde boton--pequeno" href="index.html#horario">Elegir una clase</a>
+        </article>
+
+        <article class="tarifa" id="tarifa-bono5">
+          <span class="tarifa__mejor-etiqueta">La más económica para ti</span>
+          <h3>Bono 5</h3>
+          <div class="tarifa__precio">60 €<small>/ 5 clases</small></div>
+          <p class="tarifa__detalle">Caduca a los seis meses. Puedes compartirlo con una persona que viva contigo.</p>
+          <div class="tarifa__por-clase"><strong data-por-clase>12,00 €</strong> por clase<span data-por-mes></span></div>
+          <a class="boton boton--borde boton--pequeno" href="https://wa.me/34924009900?text=Hola%2C%20quiero%20un%20Bono%205%20de%20Sala%20Vac%C3%ADa." target="_blank" rel="noopener">Pedir el bono</a>
+        </article>
+
+        <article class="tarifa" id="tarifa-bono10">
+          <span class="tarifa__mejor-etiqueta">La más económica para ti</span>
+          <h3>Bono 10</h3>
+          <div class="tarifa__precio">105 €<small>/ 10 clases</small></div>
+          <p class="tarifa__detalle">El preferido de quien viene una o dos veces por semana sin semana fija.</p>
+          <div class="tarifa__por-clase"><strong data-por-clase>10,50 €</strong> por clase<span data-por-mes></span></div>
+          <a class="boton boton--borde boton--pequeno" href="https://wa.me/34924009900?text=Hola%2C%20quiero%20un%20Bono%2010%20de%20Sala%20Vac%C3%ADa." target="_blank" rel="noopener">Pedir el bono</a>
+        </article>
+
+        <article class="tarifa" id="tarifa-mensual">
+          <span class="tarifa__mejor-etiqueta">La más económica para ti</span>
+          <h3>Mensual ilimitado</h3>
+          <div class="tarifa__precio">65 €<small>/ mes</small></div>
+          <p class="tarifa__detalle">Todas las clases que quieras durante 30 días, reformer incluido. Se renueva solo si tú lo dices.</p>
+          <div class="tarifa__por-clase"><strong data-por-clase>—</strong> por clase<span data-por-mes></span></div>
+          <a class="boton boton--ciruela boton--pequeno" href="https://wa.me/34924009900?text=Hola%2C%20quiero%20el%20mensual%20ilimitado%20de%20Sala%20Vac%C3%ADa." target="_blank" rel="noopener">Empezar este mes</a>
+        </article>
+
+        <article class="tarifa" id="tarifa-trimestral">
+          <span class="tarifa__mejor-etiqueta">La más económica para ti</span>
+          <h3>Trimestral ilimitado</h3>
+          <div class="tarifa__precio">165 €<small>/ 3 meses</small></div>
+          <p class="tarifa__detalle">Tres meses sin límite por el precio de dos y medio. Se puede pausar quince días por viaje o lesión.</p>
+          <div class="tarifa__por-clase"><strong data-por-clase>—</strong> por clase<span data-por-mes></span></div>
+          <a class="boton boton--ciruela boton--pequeno" href="https://wa.me/34924009900?text=Hola%2C%20quiero%20el%20trimestral%20ilimitado%20de%20Sala%20Vac%C3%ADa." target="_blank" rel="noopener">Empezar el trimestre</a>
+        </article>
+      </div>
+
+      <div class="condiciones">
+        <div class="revela">
+          <h3>Primera clase gratis</h3>
+          <p>Siempre, sin letra pequeña. Después decides. Si te quedas con un bono el mismo día, te regalamos la segunda clase.</p>
+        </div>
+        <div class="revela revela--2">
+          <h3>Cancelaciones</h3>
+          <p>Hasta cuatro horas antes de la clase, la plaza vuelve a tu bono. Si avisas más tarde, se descuenta; con el ilimitado no pasa nada.</p>
+        </div>
+        <div class="revela revela--3">
+          <h3>Formas de pago</h3>
+          <p>Bizum, tarjeta o efectivo en recepción. Los ilimitados también por domiciliación si prefieres no pensar en ello.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cita-franja seccion--arena" aria-label="Cita">
+    <div class="contenedor">
+      <p>No hace falta ser flexible para empezar. Hace falta empezar para serlo.</p>
+      <div class="foto foto--circulo revela">
+        <img src="img/1588286840104-8957b019727f-1000.jpg" alt="Practicante estirándose en una sala luminosa" width="800" height="800" loading="lazy" onerror="this.classList.add('img-fallback')">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="marca" href="index.html"><span class="marca__anillo" aria-hidden="true"></span>Sala Vacía</a>
+        <p>Estudio de yoga, pilates, yin y meditación.<br>Calle Sagasta, 14 · 06800 Mérida</p>
+        <p><a href="tel:+34924009900">924 00 99 00</a> · <a href="mailto:hola@salavacia.demo">hola@salavacia.demo</a></p>
+      </div>
+      <div>
+        <h3>Practicar</h3>
+        <ul>
+          <li><a href="index.html#horario">Horario</a></li>
+          <li><a href="precios.html">Bonos y tarifas</a></li>
+          <li><a href="index.html#gratis">Primera clase gratis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Conocer</h3>
+        <ul>
+          <li><a href="index.html#estudio">El estudio</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Horario del estudio</h3>
+        <ul>
+          <li>L–V · 7:00–21:30</li>
+          <li>Sábado · 9:00–19:30</li>
+          <li>Domingo · 9:30–13:00</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pie__demo">Sitio de demostración · negocio ficticio · Fotografías: Unsplash</p>
+  </div>
+</footer>
+
+<script src="js/comun.js"></script>
+<script src="js/precios.js"></script>
+</body>
+</html>
